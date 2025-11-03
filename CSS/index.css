@@ -1,0 +1,259 @@
+/* ====== ANIMAÇÃO AO CARREGAR ====== */
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav.navbar {
+    animation: fadeDown 0.8s ease forwards;
+}
+
+/* ====== BOTÕES / LINKS ====== */
+.navbar-nav .nav-link {
+    color: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    /*Sublinhado do hover*/
+    background-color: #1E90FF;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00166d;
+    transform: translateY(-2px);
+}
+
+/* ====== BOTÕES LATERAIS ====== */
+.btn-custom {
+    color: #fff;
+    background-color: #1E90FF;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #0033cc;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 22, 109, 0.4);
+}
+
+.processo-section {
+    background-color: #1a1a1a;
+}
+
+.text-primary {
+    color: #00166d !important;
+}
+
+.card-etapa {
+    background-color: #272727;
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 30px 20px;
+    transition: all 0.4s ease;
+    color: #e0e0e0;
+}
+
+.card-etapa:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background-color: #1E90FF;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto 15px auto;
+    transition: all 0.3s ease;
+}
+
+.card-etapa:hover .icon-wrapper {
+    background-color: #1b6688;
+    transform: rotate(8deg);
+}
+
+
+/* Particulas da seção principal */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Animação de entrada suave */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.fade-in:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/** ====== SEÇÃO DE SOLUÇÕES ====== */
+
+#solucoes {
+    background: #141618;
+}
+
+.solucao-card {
+    border: 1px solid rgba(0, 163, 255, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.solucao-card:hover {
+    border-color: #00A3FF;
+    box-shadow: 0 0 25px rgba(0, 163, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.solucao-icon {
+    color: #00A3FF;
+    font-size: 2rem;
+}
+
+.solucao-btn {
+    background: linear-gradient(90deg, #007BFF, #00A3FF);
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.solucao-btn:hover {
+    background: linear-gradient(90deg, #00A3FF, #00FFCC);
+    box-shadow: 0 0 20px rgba(0, 163, 255, 0.3);
+}
+
+/* Botão flutuante WhatsApp estilizado */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: #007BFF;
+    /* mesmo tom do botão "Saiba mais" */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    animation: shake 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.7);
+}
+
+/* Ícone do WhatsApp */
+.whatsapp-float i {
+    font-size: 1.9rem;
+}
+
+/* Animação de tremor suave */
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: rotate(-4deg);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: rotate(4deg);
+    }
+}
+
+/** ====== RODAPÉ ====== */
+
+.footer-link {
+    color: #cfd2da;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #00A3FF;
+    /* Azul vibrante */
+}
+
+.social-link {
+    font-size: 1.4rem;
+    color: #cfd2da;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+    color: #00A3FF;
+    /* Verde neon / destaque */
+    transform: translateY(-3px);
+}
+
+.footer-dev {
+    color: #00A3FF;
+}
+
+.footer-dev:hover {
+    color: #00A3FF;
+}
