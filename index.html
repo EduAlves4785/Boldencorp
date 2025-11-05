@@ -18,7 +18,7 @@
 </a>
 
 <body class="bg-dark ">
-    <header class="p-2 bg-dark shadow-sm">
+    <header class="p-2 bg-dark shadow-sm" id="secao-principal">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
                 <!-- Logo -->
@@ -42,13 +42,17 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav gap-2">
                         <li class="nav-item">
-                            <a class="nav-link text-light fw-semibold active" aria-current="page" href="#">Início</a>
+                            <a class="nav-link text-light fw-semibold active" aria-current="page"
+                                href="#secao-principal">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light fw-semibold" href="#">Serviços</a>
+                            <a class="nav-link text-light fw-semibold" href="#secao-processo">Estratégia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light fw-semibold" href="#">Contato</a>
+                            <a class="nav-link text-light fw-semibold" href="#carousel-ferramentas">Ferramentas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold" href="#solucoes">Soluções</a>
                         </li>
                     </ul>
                 </div>
@@ -82,15 +86,17 @@
             </div>
 
             <div class="text-center fade-in">
-                <img src="./images/pessoa_computador.png" alt="Ilustração de marketing digital"
-                    class="img-fluid rounded-4 shadow-lg" style="max-width: 480px;">
+                <video src="./images/video_escritorio.mp4" class="rounded-4 shadow-lg"
+                    style="max-width: 480px; width: 100%; height: auto; border: none; object-fit: cover;" autoplay loop
+                    muted playsinline>
+                </video>
             </div>
 
         </div>
     </section>
 
 
-    <section class="processo-section py-5">
+    <section id="secao-processo" class="processo-section py-5">
         <div class="container text-center">
             <h6 class="text-uppercase fw-bold" style="color: #1E90FF;">Nosso Processo</h6>
             <h2 class="fw-bold text-light mb-3">Veja como transformamos ideias em resultados</h2>
@@ -132,6 +138,117 @@
             </div>
 
             <a href="#" class="btn btn-primary mt-5">Fale com a Boldencorp →</a>
+        </div>
+    </section>
+
+    <section class="py-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Coluna de texto -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Tamém somos especialistas em <span class="text-primary">Consultoria
+                            Financeira</span></h2>
+                    <p class="mb-3">
+                        Nossa equipe une experiência estratégica, visão de negócios e ferramentas analíticas
+                        para oferecer soluções financeiras completas que potencializam o crescimento da sua empresa.
+                    </p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2">💡 Planejamento financeiro estratégico e personalizado.</li>
+                        <li class="mb-2">📊 Estruturação de fluxo de caixa e controle de custos.</li>
+                        <li class="mb-2">📈 Análise de indicadores e projeções de crescimento sustentável.</li>
+                    </ul>
+                    <p>
+                        Com foco em resultados, ajudamos negócios a tomarem decisões mais seguras e a
+                        conquistarem estabilidade e expansão financeira.
+                    </p>
+                    <a href="#contato" class="btn btn-primary mt-3 px-4 py-2 fw-semibold">
+                        Fale com um Especialista
+                    </a>
+                </div>
+
+                <!-- Coluna de imagem -->
+                <div class="col-lg-6 text-center">
+                    <img src="./images/finança.png" alt="Consultoria Financeira" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solucoes" class="py-5" style="background-color: #141618;">
+        <div class="container text-center text-light">
+
+            <!-- TÍTULO -->
+            <h2 class="fw-bold mb-3">Soluções Inteligentes para o Crescimento do seu Negócio</h2>
+            <p class="text-secondary mb-5">
+                Unimos estratégia, automação e performance para escalar seus resultados de forma previsível.
+            </p>
+
+            <!-- GRID DE CARDS -->
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
+                        <div class="solucao-icon mb-3">
+                            <i class="bi bi-bullseye"></i>
+                        </div>
+                        <h5 class="fw-semibold text-light">Diagnóstico Comercial</h5>
+                        <p class="text-secondary small mb-0">
+                            Análise completa do desempenho do seu time de vendas para identificar gargalos,
+                            oportunidades e estratégias de melhoria imediata.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
+                        <div class="solucao-icon mb-3">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h5 class="fw-semibold text-light">Consultoria Comercial</h5>
+                        <p class="text-secondary small mb-0">
+                            Acompanhamento estratégico e personalizado para estruturar processos de vendas mais
+                            eficientes e aumentar a taxa de conversão.
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
+                        <div class="solucao-icon mb-3">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <h5 class="fw-semibold text-light">Planejamento Estratégico Comercial</h5>
+                        <p class="text-secondary small mb-0">
+                            Criação de planos de ação personalizados para alinhar metas, equipe e recursos, garantindo
+                            crescimento sustentável e previsível.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
+                        <div class="solucao-icon mb-3">
+                            <i class="bi bi-camera-reels"></i>
+                        </div>
+                        <h5 class="fw-semibold text-light">Desenvolvimento de Criativos</h5>
+                        <p class="text-secondary small mb-0">
+                            Criação de anúncios e conteúdos visuais de alta performance para atrair, engajar e converter
+                            o público certo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTÃO CTA -->
+            <div class="text-center mt-5">
+                <a href="#contato" class="btn btn-lg fw-semibold text-light px-4 py-2 solucao-btn">
+                    Fale com um Especialista
+                </a>
+            </div>
         </div>
     </section>
 
@@ -223,79 +340,6 @@
         </div>
     </section>
 
-    <section id="solucoes" class="py-5" style="background-color: #141618;">
-        <div class="container text-center text-light">
-
-            <!-- TÍTULO -->
-            <h2 class="fw-bold mb-3">Soluções Inteligentes para o Crescimento do seu Negócio</h2>
-            <p class="text-secondary mb-5">
-                Unimos estratégia, automação e performance para escalar seus resultados de forma previsível.
-            </p>
-
-            <!-- GRID DE CARDS -->
-            <div class="row g-4">
-
-                <!-- CARD 1 -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
-                        <div class="solucao-icon mb-3">
-                            <i class="bi bi-bullseye"></i>
-                        </div>
-                        <h5 class="fw-semibold text-light">Gestão de Tráfego</h5>
-                        <p class="text-secondary small mb-0">
-                            Campanhas otimizadas para gerar leads qualificados e maximizar seu ROI.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
-                        <div class="solucao-icon mb-3">
-                            <i class="bi bi-graph-up-arrow"></i>
-                        </div>
-                        <h5 class="fw-semibold text-light">Análise de Dados</h5>
-                        <p class="text-secondary small mb-0">
-                            Métricas e insights avançados para decisões baseadas em dados reais.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
-                        <div class="solucao-icon mb-3">
-                            <i class="bi bi-lightning-charge"></i>
-                        </div>
-                        <h5 class="fw-semibold text-light">Automação Inteligente</h5>
-                        <p class="text-secondary small mb-0">
-                            Fluxos automatizados que nutrem leads e aumentam sua conversão.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- CARD 4 -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
-                        <div class="solucao-icon mb-3">
-                            <i class="bi bi-whatsapp"></i>
-                        </div>
-                        <h5 class="fw-semibold text-light">CRM Integrado ao WhatsApp</h5>
-                        <p class="text-secondary small mb-0">
-                            Centralize atendimentos e vendas com automações e relatórios completos.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- BOTÃO CTA -->
-            <div class="text-center mt-5">
-                <a href="#contato" class="btn btn-lg fw-semibold text-light px-4 py-2 solucao-btn">
-                    Fale com um Especialista
-                </a>
-            </div>
-        </div>
-    </section>
 
     <!-- RODAPÉ -->
     <footer class="text-light pt-5 pb-3" style="background-color: #0b0f14;">
@@ -314,9 +358,18 @@
                 <!-- COLUNA 2: Links rápidos -->
                 <div class="col-md-4 text-center">
                     <ul class="list-unstyled mb-0">
-                        <li><a href="#inicio" class="footer-link">Início</a></li>
-                        <li><a href="#servicos" class="footer-link">Serviços</a></li>
-                        <li><a href="#contato" class="footer-link">Contato</a></li>
+                        <li>
+                            <a class="footer-link" aria-current="page" href="#secao-principal">Início</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#secao-processo">Estratégia</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#carousel-ferramentas">Ferramentas</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#solucoes">Soluções</a>
+                        </li>
                     </ul>
                 </div>
 
