@@ -11,8 +11,30 @@
     }
 }
 
-nav.navbar {
-    animation: fadeDown 0.8s ease forwards;
+.custom-navbar {
+    min-height: 70px;
+    /* altura mínima da nav */
+}
+
+.navbar-nav .nav-link {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    font-size: 0.95rem;
+}
+
+.navbar-brand img {
+    object-fit: cover;
+    max-height: 75px;
+    /* altura da logo ajustada */
+}
+
+.social-icon i {
+    transition: all 0.2s ease;
+}
+
+.social-icon:hover i {
+    color: #5cb85c;
+    transform: scale(1.15);
 }
 
 /* ====== BOTÕES / LINKS ====== */
@@ -256,4 +278,36 @@ nav.navbar {
 
 .footer-dev:hover {
     color: #00A3FF;
+}
+
+.hero-section {
+    position: relative;
+    background-image: url('../images/imagem_principal.png');
+    /* coloque o caminho da sua imagem aqui */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    /* altura da seção (ajuste conforme desejar) */
+}
+
+.hero-section .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* camada escura por cima da imagem */
+}
+
+.hero-section .content {
+    position: relative;
+    z-index: 2;
+    /* garante que o texto fique acima da overlay */
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
 }
