@@ -1,0 +1,10 @@
+🌿 1. Verde + Cinza Neutro (elegante e natural)
+
+Ideal para manter o clima orgânico e profissional do fundo (a imagem do lagarto já traz um verde vibrante).
+
+Elemento	Cor	HEX	Uso recomendado
+Primária	Verde Esmeralda	#2ECC71	Botões, links, ícones principais
+Secundária	Verde Escuro	#1E8449	Hover e destaques fortes
+Fundo escuro	Cinza Grafite	#121212	Fundo das seções
+Texto principal	Branco gelo	#F5F6F7	Títulos e textos em fundo escuro
+Texto secundário	Cinza claro	#C0C3C7	Parágrafos e descrições

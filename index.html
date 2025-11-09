@@ -9,18 +9,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="./global/style.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/icone.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+<a href="https://wa.me/558597504697" target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
     <i class="bi bi-whatsapp"></i>
 </a>
 
 <body class="bg-dark ">
-    <header class="p-2 bg-dark shadow-sm" id="secao-principal">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 custom-navbar">
+    <header class="p-2 shadow-sm position-absolute top-0 start-0 w-100 z-3" id="secao-principal">
+        <nav class="navbar navbar-expand-lg navbar-dark py-2 custom-navbar">
             <div class="container">
                 <!-- Logo apenas imagem -->
                 <a class="navbar-brand d-flex align-items-center" href="#">
@@ -45,24 +47,19 @@
                             <a class="nav-link text-light fw-semibold active" href="#secao-principal">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light fw-semibold" href="#secao-processo">Estratégia</a>
+                            <a class="nav-link text-light fw-semibold" href="#sobre-boldencorp">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light fw-semibold" href="#carousel-ferramentas">Ferramentas</a>
+                            <a class="nav-link text-light fw-semibold" href="#servicos">Soluções</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light fw-semibold" href="#solucoes">Soluções</a>
+                            <a class="nav-link text-light fw-semibold" href="#portfolio">Portfolio</a>
                         </li>
-                        <!-- Ícones de redes sociais -->
+                        <!-- Ícones sociais -->
                         <li class="nav-item d-flex align-items-center ms-3">
-                            <a href="https://www.linkedin.com" target="_blank" class="text-light me-3 social-icon">
-                                <i class="bi bi-linkedin fs-5"></i>
-                            </a>
-                            <a href="https://www.instagram.com" target="_blank" class="text-light me-3 social-icon">
+                            <a href="https://www.instagram.com/boldencorp?igsh=anZzYTZlYXRmbGpo" target="_blank"
+                                class="text-light me-3 social-icon">
                                 <i class="bi bi-instagram fs-5"></i>
-                            </a>
-                            <a href="https://github.com" target="_blank" class="text-light social-icon">
-                                <i class="bi bi-github fs-5"></i>
                             </a>
                         </li>
                     </ul>
@@ -71,259 +68,208 @@
         </nav>
     </header>
 
-    <section class="hero-section d-flex align-items-center justify-content-center text-center text-light">
-        <div class="overlay"></div>
-        <div class="content">
-            <h1 class="fw-bold">Bem-vindo à BoldenCorp</h1>
-            <p class="lead">Soluções inteligentes para o futuro dos negócios</p>
-            <a href="#solucoes" class="btn btn-success px-4 mt-3">Saiba Mais</a>
-        </div>
-    </section>
+    <!-- Seção principal com partículas -->
+    <section class="hero-section position-relative text-light">
+        <!-- Fundo de partículas -->
+        <div id="particles-js"></div>
 
-    <section id="secao-processo" class="processo-section py-5">
-        <div class="container text-center">
-            <h6 class="text-uppercase fw-bold" style="color: #1E90FF;">Nosso Processo</h6>
-            <h2 class="fw-bold text-light mb-3">Veja como transformamos ideias em resultados</h2>
-            <p class="text-secondary mb-5">
-                Cada projeto é pensado com estratégia, design e tecnologia para gerar impacto e performance.
+        <!-- Conteúdo -->
+        <div class="content fade-in">
+            <h1>Não é só sobre tráfego, é sobre conversão.</h1>
+            <p>
+                Nosso diferencial está na integração
+                entre Marketing, Comercial e
+                Financeiro três pilares que juntos
+                constroem empresas sólidas e lucrativas.
             </p>
-
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card-etapa">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-lightbulb"></i>
-                        </div>
-                        <h5>Planejamento Inteligente</h5>
-                        <p>Analisamos o seu negócio, público e objetivos para traçar um plano digital estratégico e
-                            eficaz.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card-etapa">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-code-slash"></i>
-                        </div>
-                        <h5>Desenvolvimento Personalizado</h5>
-                        <p>Construímos sites rápidos, seguros e otimizados, com foco em usabilidade e resultados.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card-etapa">
-                        <div class="icon-wrapper">
-                            <i class="bi bi-rocket-takeoff"></i>
-                        </div>
-                        <h5>Lançamento e Suporte</h5>
-                        <p>Publicamos o projeto e acompanhamos o desempenho, garantindo evolução constante.</p>
-                    </div>
-                </div>
-            </div>
-
-            <a href="#" class="btn btn-primary mt-5">Fale com a Boldencorp →</a>
+            <a href="https://wa.me/558597504697" class="btn fw-semibold text-light rounded-pill px-5 py-3"
+                style="background-color: #2ECC71; border: none;" onmouseover="this.style.backgroundColor='#1E8449'"
+                onmouseout="this.style.backgroundColor='#2ECC71'">
+                Saiba mais
+            </a>
         </div>
     </section>
 
-    <section class="py-5 bg-dark text-light">
-        <div class="container">
-            <div class="row align-items-center">
 
-                <!-- Coluna de texto -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="fw-bold mb-4">Tamém somos especialistas em <span class="text-primary">Consultoria
-                            Financeira</span></h2>
-                    <p class="mb-3">
-                        Nossa equipe une experiência estratégica, visão de negócios e ferramentas analíticas
-                        para oferecer soluções financeiras completas que potencializam o crescimento da sua empresa.
+
+
+    <!-- ===== SOBRE A BOLDEN.CORP ===== -->
+    <section id="sobre-boldencorp" class="py-5"
+        style="background: linear-gradient(180deg, #0E0E0E 0%, #151515 100%); color: #F5F6F7;">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <!-- IMAGEM -->
+                <div class="col-lg-6 position-relative" data-aos="fade-right">
+                    <img src="./images/grafico.jpeg" alt="Gestão e performance empresarial"
+                        class="img-fluid rounded-4 shadow-lg" style="object-fit: cover; width: 100%;">
+                </div>
+
+                <!-- CONTEÚDO -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="fw-bold mb-3">
+                        A <span style="color: #2ECC71;">Bolden.Corp</span> simplifica e potencializa
+                        a gestão da sua empresa para <span style="color: #2ECC71;">crescer de verdade</span>
+                    </h2>
+
+                    <p class="text-secondary mb-4">
+                        Estratégia, estrutura e resultado — tudo em um único parceiro.
                     </p>
-                    <ul class="list-unstyled mb-4">
-                        <li class="mb-2">💡 Planejamento financeiro estratégico e personalizado.</li>
-                        <li class="mb-2">📊 Estruturação de fluxo de caixa e controle de custos.</li>
-                        <li class="mb-2">📈 Análise de indicadores e projeções de crescimento sustentável.</li>
-                    </ul>
-                    <p>
-                        Com foco em resultados, ajudamos negócios a tomarem decisões mais seguras e a
-                        conquistarem estabilidade e expansão financeira.
-                    </p>
-                    <a href="#contato" class="btn btn-primary mt-3 px-4 py-2 fw-semibold">
-                        Fale com um Especialista
+
+                    <div class="p-3 rounded-3 mb-4" style="border: 1px solid #2ECC71;">
+                        <p class="small mb-0" style="color: #C0C3C7;">
+                            <strong class="text-success">Mais que uma agência. Mais que uma consultoria.</strong><br>
+                            Somos uma <strong>BPO inteligente</strong> que transforma gestão em crescimento.
+                        </p>
+                    </div>
+
+                    <h6 class="fw-semibold text-success mb-4">MARKETING • COMERCIAL • FINANÇAS</h6>
+
+                    <a href="https://wa.me/558597504697" class="btn fw-semibold text-light rounded-pill px-4 py-2"
+                        style="background-color: #2ECC71; border: none;"
+                        onmouseover="this.style.backgroundColor='#1E8449'"
+                        onmouseout="this.style.backgroundColor='#2ECC71'">
+                        FALE COM A GENTE
                     </a>
                 </div>
-
-                <!-- Coluna de imagem -->
-                <div class="col-lg-6 text-center">
-                    <img src="./images/finança.png" alt="Consultoria Financeira" class="img-fluid rounded shadow-lg">
-                </div>
             </div>
         </div>
     </section>
 
-    <section id="solucoes" class="py-5" style="background-color: #141618;">
-        <div class="container text-center text-light">
 
-            <!-- TÍTULO -->
-            <h2 class="fw-bold mb-3">Soluções Inteligentes para o Crescimento do seu Negócio</h2>
-            <p class="text-secondary mb-5">
-                Unimos estratégia, automação e performance para escalar seus resultados de forma previsível.
+    <!-- ===== SERVIÇOS ===== -->
+    <section id="servicos" class="py-5"
+        style="background: linear-gradient(180deg, #151515 0%, #1C1C1C 100%); color: #F5F6F7;">
+        <div class="container text-center">
+            <h2 class="fw-bold text-uppercase mb-5">Nossos Serviços</h2>
+
+            <div class="row g-4 text-start">
+                <div class="col-md-6" data-aos="zoom-in-up">
+                    <div class="servico-card h-100 p-4 rounded-4 bg-dark shadow-sm" data-aos="zoom-in-up"
+                        data-aos-delay="100">
+                        <h4 class="fw-bold mb-3 text-success"><i class="bi bi-rocket-takeoff-fill me-2"></i> Estratégia
+                            e Crescimento</h4>
+                        <p class="text-secondary">Impulsionamos negócios com soluções integradas de <strong>marketing,
+                                vendas e finanças</strong>. Nosso foco é simples: gerar crescimento e resultados
+                            mensuráveis.</p>
+
+                        <div class="mt-4">
+                            <h5 class="fw-bold text-success"><i class="bi bi-briefcase-fill me-2"></i> Consultoria
+                                Comercial</h5>
+                            <p class="text-secondary">Melhoramos processos de vendas e performance de equipes para
+                                aumentar conversões e eficiência.</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="fw-bold text-success"><i class="bi bi-bar-chart-line-fill me-2"></i> Planejamento
+                                Inteligente</h5>
+                            <p class="text-secondary">Estratégias digitais sob medida para posicionar sua marca e
+                                transformar dados em resultados reais.</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="fw-bold text-success"><i class="bi bi-cash-coin me-2"></i> Consultoria Financeira
+                            </h5>
+                            <p class="text-secondary">Otimizamos sua estrutura financeira para garantir sustentabilidade
+                                e crescimento do seu negócio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="zoom-in-up">
+                    <div class="servico-card h-100 p-4 rounded-4 bg-dark shadow-sm" data-aos="zoom-in-up"
+                        data-aos-delay="200">
+                        <h4 class="fw-bold mb-3 text-success"><i class="bi bi-laptop me-2"></i> Desenvolvimento e
+                            Marketing</h4>
+                        <p class="text-secondary">Criamos <strong>sites otimizados e estratégias digitais</strong> para
+                            atrair, engajar e converter clientes.</p>
+
+                        <div class="mt-4">
+                            <h5 class="fw-bold text-success"><i class="bi bi-bullseye me-2"></i> Tráfego Pago</h5>
+                            <p class="text-secondary">Gestão de campanhas no Google e Meta Ads com foco em conversão e
+                                ROI.</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="fw-bold text-success"><i class="bi bi-palette-fill me-2"></i> Design e Identidade
+                                Visual</h5>
+                            <p class="text-secondary">Criativos e páginas de alta performance para fortalecer sua marca
+                                e presença online.</p>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5 class="fw-bold text-success"><i class="bi bi-graph-up-arrow me-2"></i> SEO e
+                                Posicionamento</h5>
+                            <p class="text-secondary">Estratégias de otimização para aumentar sua visibilidade e gerar
+                                leads qualificados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="zoom-in" data-aos-delay="400">
+                <a href="https://wa.me/558597504697" class="btn btn-lg fw-semibold text-white rounded-pill px-5 py-3"
+                    style="background-color: #2ECC71; border: none;">
+                    <i class="bi bi-chat-dots-fill me-2"></i> Falar com Especialista
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== PORTFÓLIO ===== -->
+    <section id="portfolio" class="py-5"
+        style="background: linear-gradient(180deg, #1C1C1C 0%, #0E0E0E 100%); color: #F5F6F7;">
+        <div class="container text-center">
+            <h2 class="fw-bold text-uppercase mb-3">Portfólio</h2>
+            <p class="text-secondary mb-5" style="max-width: 700px; margin: 0 auto;">
+                Confira alguns dos projetos que desenvolvemos para impulsionar marcas no ambiente digital.
+                Cada site foi criado com foco em <strong>performance, design e conversão</strong>.
             </p>
 
-            <!-- GRID DE CARDS -->
-            <div class="row g-4">
-
-                <!-- CARD 1 -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
-                        <div class="solucao-icon mb-3">
-                            <i class="bi bi-bullseye"></i>
+            <div class="row g-4 justify-content-center">
+                <!-- Card padrão -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 bg-dark shadow-sm rounded-4 overflow-hidden">
+                        <img src="./images/auto_luxo_mercedes.png" class="card-img-top" alt="Autoluxo Mercedes">
+                        <div class="card-body text-start">
+                            <h5 class="fw-bold text-success mb-2">AUTOLUXO MERCEDES</h5>
+                            <p class="text-secondary">Site institucional para concessionária de veículos de luxo, com
+                                foco em experiência do usuário.</p>
+                            <a href="https://edualves4785.github.io/AUTOLUXO-MERCEDES/"
+                                class="btn btn-success rounded-pill px-4 mt-2">Ver site</a>
                         </div>
-                        <h5 class="fw-semibold text-light">Diagnóstico Comercial</h5>
-                        <p class="text-secondary small mb-0">
-                            Análise completa do desempenho do seu time de vendas para identificar gargalos,
-                            oportunidades e estratégias de melhoria imediata.
-                        </p>
                     </div>
                 </div>
 
-                <!-- CARD 2 -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
-                        <div class="solucao-icon mb-3">
-                            <i class="bi bi-graph-up-arrow"></i>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 bg-dark shadow-sm rounded-4 overflow-hidden">
+                        <img src="./images/ondotocareplus.png" class="card-img-top" alt="Odontocare +">
+                        <div class="card-body text-start">
+                            <h5 class="fw-bold text-success mb-2">ODONTOCARE +</h5>
+                            <p class="text-secondary">Plataforma para clínica odontológica com informações detalhadas
+                                sobre serviços.</p>
+                            <a href="https://edualves4785.github.io/OdontoCare-Plus/"
+                                class="btn btn-success rounded-pill px-4 mt-2">Ver site</a>
                         </div>
-                        <h5 class="fw-semibold text-light">Consultoria Comercial</h5>
-                        <p class="text-secondary small mb-0">
-                            Acompanhamento estratégico e personalizado para estruturar processos de vendas mais
-                            eficientes e aumentar a taxa de conversão.
                     </div>
                 </div>
 
-                <!-- CARD 3 -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
-                        <div class="solucao-icon mb-3">
-                            <i class="bi bi-lightning-charge"></i>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 bg-dark shadow-sm rounded-4 overflow-hidden">
+                        <img src="./images/fortpack.png" class="card-img-top" alt="Fortpack">
+                        <div class="card-body text-start">
+                            <h5 class="fw-bold text-success mb-2">FORTPACK</h5>
+                            <p class="text-secondary">Site institucional para empresa de embalagens industriais,
+                                destacando produtos e soluções.</p>
+                            <a href="https://edualves4785.github.io/FortPack/"
+                                class="btn btn-success rounded-pill px-4 mt-2">Ver site</a>
                         </div>
-                        <h5 class="fw-semibold text-light">Planejamento Estratégico Comercial</h5>
-                        <p class="text-secondary small mb-0">
-                            Criação de planos de ação personalizados para alinhar metas, equipe e recursos, garantindo
-                            crescimento sustentável e previsível.
-                        </p>
                     </div>
                 </div>
-
-                <!-- CARD 4 -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card bg-transparent border h-100 text-start p-4 solucao-card">
-                        <div class="solucao-icon mb-3">
-                            <i class="bi bi-camera-reels"></i>
-                        </div>
-                        <h5 class="fw-semibold text-light">Desenvolvimento de Criativos</h5>
-                        <p class="text-secondary small mb-0">
-                            Criação de anúncios e conteúdos visuais de alta performance para atrair, engajar e converter
-                            o público certo.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- BOTÃO CTA -->
-            <div class="text-center mt-5">
-                <a href="#contato" class="btn btn-lg fw-semibold text-light px-4 py-2 solucao-btn">
-                    Fale com um Especialista
-                </a>
             </div>
         </div>
     </section>
-
-    <!-- Seção de Ferramentas de Marketing Digital -->
-    <section id="carousel-ferramentas" class="py-5 bg-transparent" aria-label="Ferramentas de Marketing Digital">
-        <div class="container">
-            <header class="text-center mb-5 text-light">
-                <h2 class="fw-bold">Ferramentas que impulsionam nossos resultados</h2>
-                <p style="color: #cfd2da;">
-                    Usamos as principais plataformas para maximizar o desempenho das suas campanhas.
-                </p>
-            </header>
-
-            <div id="ferramentasCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-
-                    <!-- ITEM 1 -->
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-center">
-                            <div class="card border-0 text-center p-4"
-                                style="max-width: 320px; background-color: #1b1f24; color: #fff; border-radius: 12px;">
-                                <img src="https://www.pngmart.com/files/23/Google-Ads-Logo-PNG-HD.png"
-                                    class="card-img-top mx-auto mb-3" alt="Google Ads"
-                                    style="width: 120px; height: auto;">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-semibold text-light">Google Ads</h5>
-                                    <p class="card-text" style="color: #cfd2da;">Campanhas inteligentes para alcançar
-                                        seu público certo no momento certo.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ITEM 2 -->
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center">
-                            <div class="card border-0 text-center p-4"
-                                style="max-width: 320px; background-color: #1b1f24; color: #fff; border-radius: 12px;">
-                                <img src="https://static.vecteezy.com/system/resources/previews/022/100/699/non_2x/meta-logo-transparent-free-png.png"
-                                    class="card-img-top mx-auto mb-3" alt="Meta Ads"
-                                    style="width: 120px; height: auto;">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-semibold text-light">Meta Ads</h5>
-                                    <p class="card-text" style="color: #cfd2da;">Anúncios altamente segmentados no
-                                        Facebook e Instagram.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ITEM 3 -->
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center">
-                            <div class="card border-0 text-center p-4"
-                                style="max-width: 320px; background-color: #1b1f24; color: #fff; border-radius: 12px;">
-                                <img src="https://tse1.mm.bing.net/th/id/OIP._p-uZd4NKKIxLHF7Q_S_kgHaB4"
-                                    class="card-img-top mx-auto mb-3" alt="Printerest"
-                                    style="width: 120px; height: auto;">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-semibold text-light">Printerest</h5>
-                                    <p class="card-text" style="color: #cfd2da;">Fonte estratégica para criação de
-                                        criativos e tendências visuais.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Controles -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#ferramentasCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#ferramentasCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </button>
-            </div>
-
-            <!-- CTA -->
-            <div class="text-center mt-5">
-                <a href="#contato" class="btn btn-lg text-light px-4 py-2"
-                    style="background-color: #00A3FF; border-radius: 8px; font-weight: 600;">
-                    Entre em contato
-                </a>
-            </div>
-        </div>
-    </section>
-
 
     <!-- RODAPÉ -->
     <footer class="text-light pt-5 pb-3" style="background-color: #0b0f14;">
@@ -342,17 +288,13 @@
                 <!-- COLUNA 2: Links rápidos -->
                 <div class="col-md-4 text-center">
                     <ul class="list-unstyled mb-0">
-                        <li>
-                            <a class="footer-link" aria-current="page" href="#secao-principal">Início</a>
+                        <li><a href="#secao-principal"
+                                class="text-decoration-none text-secondary footer-link">Início</a></li>
+                        <li><a href="#sobre-boldencorp"
+                                class="text-decoration-none text-secondary footer-link">Sobre</a></li>
+                        <li><a href="#servicos" class="text-decoration-none text-secondary footer-link">Soluções</a>
                         </li>
-                        <li>
-                            <a class="footer-link" href="#secao-processo">Estratégia</a>
-                        </li>
-                        <li>
-                            <a class="footer-link" href="#carousel-ferramentas">Ferramentas</a>
-                        </li>
-                        <li>
-                            <a class="footer-link" href="#solucoes">Soluções</a>
+                        <li><a href="#portfolio" class="text-decoration-none text-secondary footer-link">Portfolio</a>
                         </li>
                     </ul>
                 </div>
@@ -360,10 +302,8 @@
                 <!-- COLUNA 3: Redes sociais -->
                 <div class="col-md-4 text-center text-md-end">
                     <div class="d-flex justify-content-center justify-content-md-end gap-3">
-                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/boldencorp?igsh=anZzYTZlYXRmbGpo" class="social-link"><i
+                                class="bi bi-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -384,6 +324,16 @@
     <!-- Script Particles.js -->
     <script src="./JS/index.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.min.js"></script>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out-cubic',
+            once: true, // anima apenas uma vez
+            offset: 120 // distância antes de ativar
+        });
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
