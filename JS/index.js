@@ -37,3 +37,19 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("particles.js não foi carregado corretamente.");
   }
 });
+
+//Botão whatsapp com menu de opções
+
+const button = document.getElementById('whatsappButton');
+const menu = document.getElementById('whatsappMenu');
+
+button.addEventListener('click', () => {
+  menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+});
+
+// Fecha o menu se clicar fora dele
+document.addEventListener('click', (e) => {
+  if (!button.contains(e.target) && !menu.contains(e.target)) {
+    menu.style.display = 'none';
+  }
+});
